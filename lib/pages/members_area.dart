@@ -359,9 +359,9 @@ class _MembersAreaState extends State<MembersArea> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               ShopItem(
-                imageUrl: 'assets/resistance_band.jpeg',
+                imageUrl: 'assets/resistance_bands.png',
                 name: 'Resistance Bands',
-                price: '\$39',
+                price: '\$33',
               ),
               SizedBox(width: 40),
               ShopItem(

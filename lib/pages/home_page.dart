@@ -318,7 +318,7 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ShopItem(
-                imageUrl: 'assets/resistance_band.jpeg',
+                imageUrl: 'assets/resistance_bands.png',
                 name: 'Resistance Bands',
                 price: '\$33',
               ),
