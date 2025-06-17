@@ -3,12 +3,16 @@
 # Exit immediately if a command exits with a non-zero status.
 set -e
 
-# 1. Clone the Flutter SDK from the stable branch.
-echo "Cloning Flutter SDK..."
-git clone https://github.com/flutter/flutter.git --depth 1 --branch stable /flutter
+# 1. Clone Flutter into a LOCAL directory named 'flutter_sdk' instead of the root.
+#    This respects the build server's file permissions.
+echo "Cloning Flutter SDK into a local directory..."
+git clone https://github.com/flutter/flutter.git --depth 1 --branch stable ./flutter_sdk
 
-# 2. Add the Flutter tool to the system's PATH.
-export PATH="$PATH:/flutter/bin"
+# 2. Add the LOCAL flutter bin directory to the path.
+#    Note the './' which signifies the current project directory.
+export PATH="$PATH:./flutter_sdk/bin"
+
+# --- The rest of the script is the same ---
 
 # 3. Run flutter doctor to confirm the installation and see the version.
 echo "Running flutter doctor..."
