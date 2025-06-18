@@ -17,13 +17,14 @@ class SubscriptionCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 280,
+      height: 470,
       padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 32.0),
       decoration: BoxDecoration(
         color: AppColors.background,
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
-            color: AppColors.accent.withOpacity(0.15),
+            color: AppColors.accent.withOpacity(0.25),
             spreadRadius: 5,
             blurRadius: 15,
             offset: const Offset(0, 4),
@@ -89,7 +90,7 @@ class SubscriptionCard extends StatelessWidget {
               );
             }).toList(),
           ),
-          const SizedBox(height: 32),
+            const Spacer(),
 
           // Action Button
           ElevatedButton(

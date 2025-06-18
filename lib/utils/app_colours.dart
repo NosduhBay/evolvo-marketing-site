@@ -14,5 +14,5 @@ class AppColors {
   static const Color lightGrey = Color(0xFFFAFAFA);
 
   // A strong, dark color for buttons and accents
-  static const Color accent = Colors.blueAccent;
+  static const Color accent = Colors.brown;
 }
