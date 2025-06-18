@@ -85,7 +85,6 @@ class SignUpPage extends StatelessWidget {
                 child: const Text('Go to Standard Login Page',
                   style: TextStyle(
                     color: Colors.blueAccent,
-                    fontSize: 16,
                   ),
                 ),
               ),
